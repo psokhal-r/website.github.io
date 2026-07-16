@@ -4,223 +4,451 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Parveen Sokhal Real Estate | Coming Soon</title>
+<title>Parveen Sokhal | Broker | Royal Star Realty Inc., Brokerage</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
-    background:
-        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.72)),
-        url("https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1800&q=80") center center/cover no-repeat;
-    min-height:100vh;
+
+font-family:'Poppins',sans-serif;
+
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+color:white;
+
 }
 
 .container{
-    max-width:900px;
-    margin:auto;
-    text-align:center;
-    padding:80px 25px;
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
 }
 
-.logo{
-    font-size:42px;
-    font-weight:bold;
-    letter-spacing:2px;
-    color:#D4AF37;
-    margin-bottom:10px;
+header{
+
+padding:60px 0 30px;
+
+text-align:center;
+
+animation:fadeDown 1s;
+
 }
 
-.tagline{
-    color:#dddddd;
-    font-size:20px;
-    margin-bottom:50px;
+.logo img{
+
+width:280px;
+
+background:white;
+
+padding:8px;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.5);
+
 }
 
-.card{
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(8px);
-    border:1px solid rgba(255,255,255,.15);
-    border-radius:15px;
-    padding:45px;
+.profile{
+
+margin-top:35px;
+
+}
+
+.profile img{
+
+width:220px;
+
+border-radius:50%;
+
+border:6px solid #D4AF37;
+
+box-shadow:0 20px 45px rgba(0,0,0,.5);
+
 }
 
 h1{
-    font-size:48px;
-    color:#D4AF37;
-    margin-bottom:20px;
+
+font-size:55px;
+
+color:#D4AF37;
+
+margin-top:30px;
+
 }
 
-p{
-    font-size:20px;
-    line-height:1.8;
-    margin-bottom:25px;
+.subtitle{
+
+font-size:26px;
+
+font-weight:600;
+
+margin-top:10px;
+
 }
 
-.features{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:18px;
-    margin:40px 0;
+.tag{
+
+color:#dddddd;
+
+margin-top:5px;
+
+font-size:18px;
+
 }
 
-.feature{
-    background:rgba(255,255,255,.10);
-    padding:18px;
-    border-radius:10px;
-    font-size:18px;
+.hero{
+
+padding:60px 0;
+
+text-align:center;
+
+}
+
+.hero h2{
+
+font-size:48px;
+
+color:#D4AF37;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+line-height:1.8;
+
+max-width:900px;
+
+margin:auto;
+
+color:#f2f2f2;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+margin-top:60px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+padding:30px;
+
+border-radius:18px;
+
+backdrop-filter:blur(8px);
+
+transition:.3s;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+background:rgba(212,175,55,.12);
+
+}
+
+.card h3{
+
+color:#D4AF37;
+
+margin-bottom:15px;
+
+}
+
+.buttons{
+
+margin-top:50px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:18px 35px;
+
+background:#D4AF37;
+
+color:#111;
+
+font-weight:bold;
+
+text-decoration:none;
+
+border-radius:40px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:white;
+
+transform:scale(1.05);
+
 }
 
 .contact{
-    margin-top:40px;
+
+margin-top:70px;
+
+text-align:center;
+
 }
 
 .contact h2{
-    color:#D4AF37;
-    margin-bottom:20px;
+
+color:#D4AF37;
+
+margin-bottom:25px;
+
+font-size:34px;
+
 }
 
 .contact p{
-    font-size:18px;
-    margin:10px 0;
-}
 
-a{
-    color:#FFD95E;
-    text-decoration:none;
-}
+font-size:22px;
 
-.button{
-    display:inline-block;
-    margin-top:25px;
-    padding:16px 35px;
-    background:#D4AF37;
-    color:black;
-    font-weight:bold;
-    border-radius:40px;
-    text-decoration:none;
-    transition:.3s;
-}
+margin:12px;
 
-.button:hover{
-    background:white;
 }
 
 footer{
-    margin-top:60px;
-    color:#cccccc;
-    font-size:15px;
+
+margin-top:80px;
+
+padding:35px;
+
+text-align:center;
+
+background:rgba(0,0,0,.45);
+
+font-size:15px;
+
+color:#ddd;
+
+}
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
 }
 
 @media(max-width:768px){
 
+.logo img{
+
+width:220px;
+
+}
+
+.profile img{
+
+width:170px;
+
+}
+
 h1{
+
+font-size:38px;
+
+}
+
+.hero h2{
+
 font-size:34px;
+
 }
 
-.logo{
-font-size:30px;
-}
+.hero p{
 
-p{
 font-size:18px;
+
+}
+
+.contact p{
+
+font-size:18px;
+
 }
 
 }
+
 </style>
 
 </head>
 
 <body>
 
-<div class="container">
+<header class="container">
 
 <div class="logo">
-PARVEEN SOKHAL
+<img src="images/logo.png" alt="Royal Star Realty">
 </div>
 
-<div class="tagline">
-Professional Real Estate Services
+<div class="profile">
+<img src="images/parveen.png" alt="Parveen Sokhal">
+</div>
+
+<h1>Parveen Sokhal</h1>
+
+<div class="subtitle">Broker</div>
+
+<div class="tag">
+Royal Star Realty Inc., Brokerage
+</div>
+
+</header>
+
+<section class="hero container">
+
+<h2>Our New Website is Coming Soon</h2>
+
+<p>
+
+Thank you for visiting.
+
+We're creating a modern real estate experience to help you buy, sell and invest with confidence.
+
+Stay tuned for an exciting new website featuring the latest listings, market insights and professional real estate services.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏡 Buy Your Dream Home</h3>
+<p>Personalized guidance from search to closing.</p>
 </div>
 
 <div class="card">
-
-<h1>Our New Website is Coming Soon</h1>
-
-<p>
-Thank you for visiting <strong>Parveen Sokhal Real Estate</strong>.
-We're building a modern website designed to make buying, selling, and investing in real estate easier than ever.
-</p>
-
-<div class="features">
-
-<div class="feature">
-🏡 MLS® Property Search
+<h3>💰 Sell With Confidence</h3>
+<p>Professional marketing and maximum exposure.</p>
 </div>
 
-<div class="feature">
-📈 Market Updates & Reports
+<div class="card">
+<h3>📈 Investment Properties</h3>
+<p>Helping you build long-term wealth through real estate.</p>
 </div>
 
-<div class="feature">
-💰 Free Home Evaluation
+<div class="card">
+<h3>🏘️ Pre-Construction</h3>
+<p>Exclusive access to new developments across Ontario.</p>
 </div>
 
-<div class="feature">
-🏘️ Pre-Construction Projects
+<div class="card">
+<h3>📊 Market Updates</h3>
+<p>Stay informed with the latest housing trends.</p>
 </div>
 
-<div class="feature">
-📅 Online Appointment Booking
-</div>
-
-<div class="feature">
-🤝 Expert Buying & Selling Advice
+<div class="card">
+<h3>🏠 Free Home Evaluation</h3>
+<p>Know your home's current market value.</p>
 </div>
 
 </div>
 
-<p>
-We're working hard behind the scenes and look forward to welcoming you soon.
-</p>
+<div class="buttons">
 
-<a class="button" href="mailto:info@parveensokhal.com">
-Contact Us
+<a class="btn" href="tel:+15195902559">
+📞 Call Now
 </a>
+
+<a class="btn" href="mailto:info@parveensokhal.com">
+📧 Email Me
+</a>
+
+</div>
 
 <div class="contact">
 
-<h2>Need Immediate Assistance?</h2>
+<h2>Contact Information</h2>
 
-<p>
-🌐 www.parveensokhal.com
-</p>
+<p><strong>Parveen Sokhal</strong></p>
 
-<p>
-📧 info@parveensokhal.com
-</p>
+<p>Broker</p>
 
-<p>
-📞 (905) XXX-XXXX
-</p>
+<p>Royal Star Realty Inc., Brokerage</p>
 
-</div>
+<p>📱 (519) 590-2559</p>
+
+<p>☎️ Office: (905) 793-1111</p>
+
+<p>🌐 www.parveensokhal.com</p>
 
 </div>
+
+</section>
 
 <footer>
 
-© 2026 Parveen Sokhal Real Estate. All Rights Reserved.
+© 2026 Parveen Sokhal | Royal Star Realty Inc., Brokerage
+
+<br><br>
+
+Serving the Greater Toronto Area with Integrity, Professionalism & Results.
 
 </footer>
-
-</div>
 
 </body>
 </html>
